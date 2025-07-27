@@ -1,0 +1,20 @@
+{
+  "name": "watchdog",
+  "version": "1.0.0",
+  "author": "Dmytro Drachov",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev index.ts",
+    "check": "ts-node-dev ./scripts/check.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.4.0",
+    "json-schema-to-ts": "^3.1.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^24.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
