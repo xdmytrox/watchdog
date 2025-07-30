@@ -19,9 +19,6 @@ type Stats = {
 export class InsightService {
   private patterns = new Map<string, Predicate>();
   constructor(private jobRepository: IRepository<Job>) {
-    this.definePattern("name len > 10", (job) => job.name.length > 10);
-    this.definePattern("name has digit", (job) => !!job.name.match(/[0-9]/));
-    this.definePattern("arguments len > 3", (job) => job.arguments.length > 3);
     this.definePattern("has arg --debug", (job) =>
       job.arguments.includes("--debug")
     );
